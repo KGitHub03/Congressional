@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google-Sans" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js" defer>
+    </script>
+<link rel="icon" type="image/x-icon" href="https://i.ibb.co/7JKmK9B/hhhh.png">
+    <title>IBUCK | Simple Interest</title></head>
+
+<body>  
+    <div class="jumbotron">
+        <div class="row">
+           <div class="col-1 pr-0 text-right"><img class="buck" src="https://i.ibb.co/7JKmK9B/hhhh.png" alt=""></div>
+             <a href="https://ibuckhome.netlify.app/" class="btn col-8 pl-0 title">
+                 <h1>IBUCK</h1>
+             </a>
+        <div class="col-3 nav">
+            <a href="https://ibuckcalc.netlify.app/" class="btn">Calculations</a>
+            <a href="https://ibuckinfo.netlify.app/" class="btn">Popular Financial Terms</a>
+        </div>
+        </div>
+    </div>
+
+    <div class="dark">
+        Simple Interest
+    </div>
+    <div class="row" style="margin: 5%;">
+        <div class="intro col-4">
+            <h1>Simple interest</h1>
+            <br>
+            <p>Simple interest is the interest charge on borrowing that's calculated using an original principal amount only and an interest rate that never changes. It does not involve compounding, where borrowers end up paying interest on principal and interest that grows over multiple payment periods.<br><br> Simple interest can be advantageous for borrowers because of its relatively lower cost of money. However, bear in mind that, because of its simple calculation, it gives only a  of cost that may not account for other charges/fees that a loan may include.<br><br>Calculate your simple interest profits with the calculator on the right!</p>
+        </div>
+    <div class="col-4">
+        <img class="i" src="https://i.insider.com/6064c04cdaf0f10018f994a4?width=1000&format=jpeg&auto=webp" alt="">
+    </div>
+    <div class="col-4">
+        
+        <div class="card">
+            <div class="card-header">Simple Interest</div>
+            <div class="card-body">
+                  <div class="input-group mb-2 mr-sm-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">$</div>
+                    </div>
+                    <input type="text" class="form-control" id="num1" placeholder="Principal">
+                  </div>
+                <div class="input-group mb-2 mr-sm-2">
+                    <input type="text" class="form-control" id="num2" placeholder="Annual interest rate">
+                      <div class="input-group-text after">%</div>
+                </div>
+                <div class="input-group mb-2 mr-sm-2">
+                     <input type="text" class="form-control" id="num3" placeholder="Time">
+                    <select onchange="yearday();" class="form-control after" name="num4" id="num4">
+                        <option selected disabled value="1">Frequency</option>
+                        <option value="1">Years</option>
+                        <option value="2">Semi-Anually</option>
+                        <option value="4">Quarters</option>
+                        <option value="12">Months</option>
+                        <option value="360">Days (360)</option>
+                        <option value="365">Days (365)</option>
+                    </select>
+                </div>
+                    <button class="btn btn-block btn-primary" onclick="add();">Calculate</button>
+            </div>
+        </div>
+        <br>
+        <div class="card">
+            <div class="card-header">Simple Interest</div>
+            <div class="card-body">
+                <h1 id="SI">-</h1>
+            </div>
+            <div class="card-body">
+                <table class="table" width="100" style="margin-bottom: 0px;">
+                    <tr>
+                        <th>Principal</th>
+                        <th>Interest</th>
+                    </tr>
+                    <tr>
+                        <td><h3 id="principal">-</h3></td>
+                        <td><h3 id="interest">-</h3></td>
+                    </tr>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+* {
+    font-family: 'Trebuchet MS';
+    font-weight: normal;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.jumbotron {
+    background-color: #f5f5f5;
+    margin-bottom: 0px;
+    height: 100px;
+    padding-top: 25px;
+    width: 110%;
+    /*position: fixed;*/
+}
+
+.after {
+    border-bottom-left-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+    border-left: none;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 1px;
+}
+
+.card>* {
+    background-color: white;
+    border: none;
+}
+
+.card,
+.card-header,
+.card-body {
+    border-radius: 30px !important;
+}
+
+.input-group {
+    margin-bottom: 20px !important;
+}
+
+button {
+    border-radius: 20px !important;
+}
+.i
+{
+    width: 100%;
+}
+.title {
+    text-align: left;
+}
+
+.buck {
+    width: 70px;
+    border-radius: 1rem;
+}
+
+.dark {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding: 90px;
+    height: 266px;
+    background-color: #031e49;
+    margin-bottom: 20px;
+}
